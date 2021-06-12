@@ -45,6 +45,7 @@
             android:layout_weight="1">
 
             <EditText
+                android:id="@+id/Lemail"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginLeft="40dp"
@@ -62,6 +63,7 @@
             android:layout_weight="1">
 
             <EditText
+                android:id="@+id/Lpassword"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginLeft="40dp"
@@ -81,6 +83,7 @@
         android:gravity="center">
 
         <Button
+            android:id="@+id/Login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="LOGIN"
@@ -111,10 +114,11 @@
         android:gravity="center|bottom">
 
         <TextView
+            android:id="@+id/gotosignup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
 
+            android:layout_marginBottom="20dp"
             android:text="Forgot password"
             android:textColor="#ffffff"
             android:textSize="14sp" />

@@ -10,91 +10,115 @@
     tools:context=".MainActivity">
 
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="151dp"
-        android:layout_height="64dp"
-        android:text="Sign up"
-        android:textColor="#ffff"
-        android:textSize="38sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="380dp"
-        android:layout_height="50dp"
-        android:background="#514A4A"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:paddingLeft="20dp"
-        android:text="Name"
-        android:textColor="#ffff"
-        android:textColorHint="#DADADA"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="99dp" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="151dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Sign up"
+            android:textStyle="bold"
+            android:textColor="#ffff"
+            android:textSize="38sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName2"
-        android:layout_width="380dp"
-        android:layout_height="50dp"
-        android:background="#514A4A"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:paddingLeft="20dp"
-        android:text="User Id"
-        android:textColor="#ffff"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="175dp" />
+        <EditText
+            android:id="@+id/Rname"
+            android:layout_width="380dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="#514A4A"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="20dp"
+            android:hint="Name"
+            android:textColor="#ffff"
+            android:textColorHint="#DADADA"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="99dp" />
 
-    <EditText
-        android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="380dp"
-        android:layout_height="50dp"
-        android:background="#514A4A"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        android:paddingLeft="20dp"
-        android:text="Email Id"
-        android:textColor="#ffff"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="254dp" />
+        <EditText
+            android:id="@+id/Ruserid"
+            android:layout_width="380dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="#514A4A"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="20dp"
+            android:hint="User Id"
+            android:textColor="#ffff"
+            android:textColorHint="#DADADA"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="175dp" />
 
-    <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="380dp"
-        android:layout_height="50dp"
-        android:background="#514a4a"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:paddingLeft="20dp"
-        android:textColor="#ffff"
-        android:textColorHint="#dadada"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="327dp" />
+        <EditText
+            android:id="@+id/Remail"
+            android:layout_width="380dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="#514A4A"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="20dp"
+            android:hint="Email Id"
+            android:textColor="#ffff"
+            android:textColorHint="#DADADA"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="254dp" />
 
-    <EditText
-        android:id="@+id/editTextTextPassword2"
-        android:layout_width="380dp"
-        android:layout_height="50dp"
-        android:background="#514a4a"
-        android:ems="10"
-        android:hint="Confirm Password"
-        android:inputType="textPassword"
-        android:paddingLeft="20dp"
-        android:textColor="#ffff"
-        android:textColorHint="#dadada"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="399dp" />
+        <EditText
+            android:id="@+id/Rpass"
+            android:layout_width="380dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="#514a4a"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:textColor="#ffff"
+            android:textColorHint="#dadada"
+            tools:layout_editor_absoluteX="15dp"
+            tools:layout_editor_absoluteY="327dp" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#514a4a"
-        android:text="Sign Up"
-        android:textColor="#ffff"
-        tools:layout_editor_absoluteX="159dp"
-        tools:layout_editor_absoluteY="491dp" />
+        <EditText
+            android:id="@+id/Rconpass"
+            android:layout_width="380dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="#514a4a"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:textColor="#ffff"
+            android:textColorHint="#dadada"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="399dp" />
+
+        <Button
+            android:id="@+id/SignupB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="#39952A"
+            android:backgroundTint="#16B61D"
+            android:text="Sign Up"
+            android:textColor="#ffff"
+            android:textSize="30dp"
+            tools:layout_editor_absoluteX="159dp"
+            tools:layout_editor_absoluteY="491dp" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
