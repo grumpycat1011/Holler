@@ -61,7 +61,7 @@ public class SignupActivity extends AppCompatActivity {
                 fAuth.createUserWithEmailAndPassword(useremail,password).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                     @Override
                     public void onSuccess(AuthResult authResult) {
-                        startActivity(new Intent(getApplicationContext(),LoginActivity.class));
+                        startActivity(new Intent(getApplicationContext(),MainActivity.class));//this will again need to be changed when we implement Preference picker
                         Toast.makeText(SignupActivity.this, "Great success", Toast.LENGTH_SHORT).show();//I did this as a meme from borat change this later
                         finish();
 
