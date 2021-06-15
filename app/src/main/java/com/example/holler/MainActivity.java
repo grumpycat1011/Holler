@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
         if(!fAuth.getCurrentUser().isEmailVerified()){
             startActivity(new Intent(getApplicationContext(),VerificationActivity.class));
+            finish();
         }
 
     }

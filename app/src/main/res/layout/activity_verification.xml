@@ -2,9 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#242424"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#2A2B2A"
+    android:backgroundTint="#232323"
     tools:context=".VerificationActivity">
 
 
@@ -20,10 +21,10 @@
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:text="Please Verify your email address to proceed to Holler"
+            android:text="Please Verfiy your Email Address"
             android:textColor="#ffffff"
             android:textSize="25dp" />
 
@@ -32,7 +33,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:text="Verify"
+            android:background="#0CC513"
+            android:backgroundTint="#10CF18"
+            android:text="Refresh"
             android:textSize="23sp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -26,23 +26,25 @@ public class VerificationActivity extends AppCompatActivity {
         verifybtn = findViewById(R.id.verifybtn);
         fAuth = FirebaseAuth.getInstance();
 
+        fAuth.getCurrentUser().sendEmailVerification().addOnSuccessListener(new OnSuccessListener<Void>() {
+            @Override
+            public void onSuccess(Void unused) {
+                Toast.makeText(VerificationActivity.this, "Verification Email sent", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getApplicationContext(),MainActivity.class));
+            }
+
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull @NotNull Exception e) {
+
+            }
+        });
+
 
         verifybtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                fAuth.getCurrentUser().sendEmailVerification().addOnSuccessListener(new OnSuccessListener<Void>() {
-                    @Override
-                    public void onSuccess(Void unused) {
-                        Toast.makeText(VerificationActivity.this, "Verification Email sent", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(getApplicationContext(),MainActivity.class));
-                    }
-
-                }).addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull @NotNull Exception e) {
-
-                    }
-                });
+                startActivity(new Intent(getApplicationContext(),MainActivity.class));
             }
         });
     }
