@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
@@ -21,6 +22,7 @@ import org.jetbrains.annotations.NotNull;
 public class LoginActivity extends AppCompatActivity {
     private EditText Lemail, Lpassword;
     private Button Login, gotosignup;
+    private TextView forgot_password;
     FirebaseAuth fAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +33,15 @@ public class LoginActivity extends AppCompatActivity {
         Login = findViewById(R.id.Login);
         gotosignup = findViewById(R.id.button2);
         fAuth = FirebaseAuth.getInstance();
+        forgot_password = (TextView) findViewById(R.id.forgot_password);
+
+
+        forgot_password.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this, new_password.class));
+            }
+        });
 
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,7 +82,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         if(FirebaseAuth.getInstance().getCurrentUser() != null){
-            startActivity(new Intent(getApplicationContext(),MainActivity.class));//this will need to be chanegd when we implement the preferences page
+            startActivity(new Intent(getApplicationContext(),MainActivity.class));//this will need to be changed when we implement the preferences page
             finish();
         }
 
