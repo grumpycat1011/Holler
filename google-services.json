@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "499264452669",
+    "project_id": "holler-cfc3f",
+    "storage_bucket": "holler-cfc3f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499264452669:android:9b67a5c7df55264f775254",
+        "android_client_info": {
+          "package_name": "com.example.holler"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "499264452669-7pclqdq7jtj3jnb1tfsnvo21jnrcmt8s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBme3nvoDj2z0cHg7RXsbrV0x9DojtJC9w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "499264452669-7pclqdq7jtj3jnb1tfsnvo21jnrcmt8s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
