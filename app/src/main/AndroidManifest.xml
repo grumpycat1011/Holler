@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Holler">
-        <activity android:name=".VerificationActivity"></activity>
+        <activity android:name=".Create_feed"></activity>
+        <activity android:name=".Feed" />
+        <activity android:name=".VerificationActivity" />
         <activity android:name=".SignupActivity" />
         <activity android:name=".NewProjectActivity" />
         <activity android:name=".ProfileActivity" />
@@ -21,7 +23,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity"/>
     </application>
 
 </manifest>

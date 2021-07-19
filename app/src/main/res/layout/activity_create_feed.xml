@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Create_feed">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CREATE NEW POST"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="25dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/question_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Post here"
+        android:textSize="20dp"
+        android:layout_margin="40dp"/>
+    <Button
+        android:id="@+id/postbtn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Post"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        />
+
+</LinearLayout>
