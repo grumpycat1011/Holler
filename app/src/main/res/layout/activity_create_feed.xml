@@ -24,6 +24,20 @@
         android:hint="Enter Post here"
         android:textSize="20dp"
         android:layout_margin="40dp"/>
+    <EditText
+        android:id="@+id/phone_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Phone number here"
+        android:textSize="20dp"
+        android:layout_margin="40dp"/>
+    <EditText
+        android:id="@+id/email_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email here"
+        android:textSize="20dp"
+        android:layout_margin="40dp"/>
     <Button
         android:id="@+id/postbtn"
     android:layout_width="match_parent"

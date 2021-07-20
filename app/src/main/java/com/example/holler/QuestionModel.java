@@ -1,7 +1,31 @@
 package com.example.holler;
 
 public class QuestionModel {
-    String Name, url, userid, key, question,time;
+    String Name;
+    String url;
+    String userid;
+    String key;
+    String question;
+    String time;
+    String email;
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    String phone;
     public QuestionModel(){
 
     }

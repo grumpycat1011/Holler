@@ -19,8 +19,8 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.Calendar;
 
 public class Create_feed extends AppCompatActivity {
-    EditText question;
-    Button postbtn;
+    String question;
+
     FirebaseDatabase database = FirebaseDatabase.getInstance("https://holler-cfc3f-default-rtdb.firebaseio.com/");
     DatabaseReference Allquestions, UserQuestions;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
@@ -33,6 +33,8 @@ public class Create_feed extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_feed);
+        EditText phoneet = findViewById(R.id.phone_et);
+        EditText emailet = findViewById(R.id.email_et);
         EditText edittext = findViewById(R.id.question_et);
         Button postbtn = findViewById(R.id.postbtn);
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
@@ -44,7 +46,9 @@ public class Create_feed extends AppCompatActivity {
         postbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String question = edittext.getText().toString();
+                String email = emailet.getText().toString();
+                String phone = phoneet.getText().toString();
+                question = edittext.getText().toString();
                 Calendar cdate = Calendar.getInstance();
                 SimpleDateFormat currentdate = new SimpleDateFormat("dd-MMMM-yyyy");
                 final String savedate = currentdate.format(cdate.getTime());
@@ -56,6 +60,8 @@ public class Create_feed extends AppCompatActivity {
                 String time = savedate + ":" + savetime;
 
                 if(question != null){
+                    member.setEmail(email);
+                    member.setPhone(phone);
                     member.setQuestion(question);
                     member.setUserid(uid);
                     member.setTime(time);
